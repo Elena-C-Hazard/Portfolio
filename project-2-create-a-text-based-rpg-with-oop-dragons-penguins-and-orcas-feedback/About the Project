@@ -1,0 +1,7 @@
+This was a C# group project with two other people. I made the characters' stats, I made the movement,
+the error message for if you input the wrong key, and the check to see if you won the game or not. I also
+did troubleshooting and incorperated my code into the code that the rest of my team did and made it so
+that if you don't pick a character it it will just give you a character with no special abilities. I made
+the section in the main code where the stats get set from the character and the how they will be displayed.
+I also made it so that you could see how your choices will affect you grade and made the code to track 
+your grade and make changes to it that can also be affected by the special atributes of the character.

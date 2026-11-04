@@ -1,0 +1,5 @@
+This was a C# group project with one other person. I made the code to connect to a database, we did not
+create the database, it was auto generated. I also made the Dragons and Penguins classes and the
+BaseEntity and Animal abstract classes. I also made the controls easier to use by making it so that you
+don't have to push enter after each input. I also made the code that allows you to save and delete the
+data from the game into the database, as well as the code for catching if you did an invalid input.

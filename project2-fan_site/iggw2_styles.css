@@ -1,0 +1,243 @@
+/* html styles */
+
+html {
+    background: url(the_pale_tree.png) fixed;
+}
+
+/* body styles */
+
+body {
+    background-color: rgba(15, 58, 15, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+    grid-template-areas: "header header"
+                         "nav nav"
+                         "main main"
+                         "article aside"
+                         "footer footer";
+}
+
+body > header {
+    grid-area: header;
+}
+
+body > main {
+    grid-area: main;
+}
+
+body > nav {
+    grid-area: nav;
+}
+
+body > article {
+    grid-area: article;
+} 
+
+body > aside {
+    grid-area: aside;
+}
+
+body > footer {
+    grid-area: footer;
+}
+
+body#jumping_puzzles_page {
+    background-color: rgba(15, 58, 15, 0.5);
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: auto;
+    margin-right: auto;
+    width: 1080px;
+    display: grid;
+    grid-template-columns: 2fr 0.5fr;
+    grid-template-areas: "header header"
+                         "nav nav"
+                         "main main"
+                         "article article"
+                         "section section"
+                         "footer footer";
+}
+
+body#jumping_puzzles_page > header {
+    grid-area: header;
+}
+
+body#jumping_puzzles_page > main {
+    grid-area: main;
+}
+
+body#jumping_puzzles_page > nav {
+    grid-area: nav;
+}
+
+body#jumping_puzzles_page > article {
+    grid-area: article;
+}
+
+body#jumping_puzzles_page > section {
+    grid-area: section;
+}
+
+body#jumping_puzzles_page > footer {
+    grid-area: footer;
+}
+
+/* header styles */
+
+header {
+    opacity: 0.7;
+}
+
+/* nav styles */
+
+nav {
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.5), rgba(15, 58, 15, 0.5) 40%);
+    border: 8px inset rgba(15, 58, 15, 0.5);
+}
+
+ul {
+    list-style: none;
+}
+
+ul#nav_bar li {
+    float: left;
+    width: 20%;
+}
+
+a:link, a:visited, a:active {
+    color: rgba(15, 58, 15, 0.5);
+}
+
+li#home > a:hover {
+    display: block;
+    color: white;
+    box-shadow: white 0px 0px 20px 10px;
+}
+
+li#about > a:hover {
+    display: block;
+    color: yellow;
+    box-shadow: yellow 0px 0px 20px 10px;
+}
+
+li#jumping_puzzles > a:hover {
+    display: block;
+    color: aqua;
+    box-shadow: aqua 0px 0px 20px 10px;
+}
+
+li#meta_events > a:hover {
+    display: block;
+    color: rgb(153, 58, 241);
+    box-shadow: rgb(153, 58, 241) 0px 0px 20px 10px;
+}
+
+li#fractals > a:hover {
+    display: block;
+    color: pink;
+    box-shadow: pink 0px 0px 20px 10px;
+}
+/* main styles */
+
+main {
+    text-align: center;
+    color: rgb(104, 187, 104);
+    text-shadow: black 0px 0px 10px;
+    position: relative;
+}
+
+main > img {
+    position: absolute;
+    top: 20px;
+    left: 0px;
+    opacity: 0.5;
+    transform: rotate(-30deg) scale(0.8, 0.8);
+}
+
+/* article styles */
+
+article {
+    padding: 5px;
+    border-width: 5px;
+    margin: 5px;
+    font-size: 150%;
+}
+
+article > img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+article p::first-letter {
+    font-size: 150%;
+}
+a#jumping_puzzles_link, a#meta_events_link, a#fractals_link {
+    color: yellow;
+}
+/* aside styles */
+
+aside > img {
+    border: 10px double rgba(15, 58, 15, 0.5);
+    border-radius: 20px 40px;
+    filter: saturate(0.5);
+}
+
+aside > p {
+    text-align: center;
+}
+
+a#about_link {
+    color: yellow;
+}
+/* section styles */
+
+section {
+    line-height: 3em;
+    background: radial-gradient(circle at center, rgba(255, 255, 255, 0.5), rgba(15, 58, 15, 0.5));
+    border: 8px inset rgba(15, 58, 15, 0.5);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 15px;
+    text-align: center;
+}
+
+section > article#treasure_chest {
+    grid-area: 8/1/9/3;
+}
+section > * {
+   outline: 4px solid rgba(15, 58, 15, 0.5);
+}
+
+section > article > img {
+    border: 10px double rgba(15, 58, 15, 0.5);
+    border-radius: 20px 40px;
+}
+
+section > h2 {
+    font: normal small-caps bold 3em/2em sans-serif;
+    word-spacing: 2px;
+    letter-spacing: 1px;
+    grid-area: 1/1/2/3;
+}
+
+/* footer styles */
+
+footer {
+    background: linear-gradient(to bottom left, rgba(0, 255, 255, 0.8), rgba(3, 121, 130, 0.8) 60%);
+    position: relative;
+}
+
+ul.contact_info > li {
+    display: block;
+    float: left;
+    width: 50%;
+}
+
+ul.contact_info > li > a:hover {
+    display: block;
+    color: orange;
+    box-shadow: orange 0px 0px 20px 10px;
+}

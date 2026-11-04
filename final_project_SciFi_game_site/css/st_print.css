@@ -1,0 +1,50 @@
+ul#horizontal_nav, aside, footer {
+    display: none;
+}
+
+@page {
+    size: 8.5in 11in;
+    margin: 0.5in;
+}
+
+h1 {
+    font-size: 28pt;
+    line-height: 30pt;
+    margin: 0.3in 0in 0.2in;
+}
+
+h2 {
+    font-size: 20pt;
+    margin: 0.1in 0in 0.1in 0.3in;
+}
+
+p {
+    font-size: 12pt;
+    margin: 0.1in 0in 0.1in 0.3in;
+    widows: 3;
+    orphans: 3;
+}
+
+figure img, div.product img {
+    border: 2px solid rgb(191, 191, 191);
+    display: block;
+    margin: 0.25in auto;
+    width: 65%;
+}
+
+img {
+    break-inside: avoid;
+}
+
+
+audio {
+    display: none;
+}
+
+iframe {
+    display: none;
+}
+
+label, input, textarea {
+    display: none;
+}

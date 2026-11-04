@@ -1,0 +1,320 @@
+
+html {
+    background: url(../img/nebula2.png) fixed;
+    font-family: 'Times New Roman', sans-serif;
+}
+
+html#download, html#product_page, html#login {
+    background: url(../img/galaxy.png) fixed;
+}
+
+html#download > body > p {
+    height: 35.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+    max-width: 980px;
+    min-width: 350px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body.product {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-align: left;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body.product > nav {
+    text-align: center;
+}
+
+h1.title{
+    text-align: center;
+}
+
+h2 {
+    padding-top: 50px;
+}
+
+article {
+    padding: 25px 100px;
+}
+
+article.about {
+    padding: 0px 100px;
+}
+
+div.comment{
+    margin-right: 1000px;
+    margin-left: 50px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgba(240, 100, 240, .5);
+    border-radius: 10px;
+    text-shadow: 1px 1px 2px rgb(39, 0, 58);
+    min-width: 300px;
+}
+
+div.name{
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 1px solid black;
+    border-radius: 30px;
+    text-shadow: 1px 1px 2px rgb(39, 0, 58);
+    width: fit-content;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 10px;
+    margin-bottom: 10px;
+    min-width: 150px;
+}
+
+div.score {
+    background-color: rgba(200, 200, 200, 0.3);
+    border: 1px solid black;
+    border-radius: 30px;
+    width: fit-content;
+    padding-top: 2.5px;
+    padding-bottom: 2.5px;
+    padding-left: 5px;
+    padding-right: 5px;
+     min-width: 75px;
+}
+
+div.fauxlink {
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: lightpink;
+    border-radius: 20px;
+    width: fit-content;
+    color: blue;
+    text-decoration: underline;
+    cursor: pointer;
+    margin-bottom: 10px;
+    min-width: 150px;
+    margin-left: 10px;
+
+}
+
+div.fauxlink:hover {
+    color: darkblue;
+}
+
+div.dates {
+    font-weight: bold;
+    border-bottom: solid rgb(75, 3, 75) 1px;
+}
+
+div.store {
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    max-width: fit-content;
+    flex-flow: row wrap;
+}
+
+div.store img {
+    width: 75%;
+    height: inherit;
+}
+
+div.img {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+
+div.star {
+    text-align: left;
+    justify-content: left;
+    font-size: larger;
+    width: fit-content;
+}
+
+div.star:hover{
+    color: yellow;
+}
+
+div.product {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 50%;
+    height: inherit;
+}
+
+div.sale {
+    color: red;
+    text-decoration: line-through;
+    text-align: center;
+}
+
+div.l5{
+    text-align: center;
+}
+
+div#description {
+    padding: 100px;
+}
+
+aside {
+    display: flex;
+    text-align: left;
+}
+
+div.product img, figure img {
+    border-radius: 20px;
+    width: 150%;
+    height: inherit;
+    border: 2px solid rebeccapurple;
+}
+
+header > img {
+    max-width: 100%;
+    flex: 1 1 auto;
+}
+
+
+nav {
+    flex: 1 1 auto;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background: rebeccapurple;
+    box-shadow: inset 0 0 10px black;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+li > a {
+    color: white;
+    font-size: 1em;
+    letter-spacing: 0em;
+    text-shadow: rgb(202, 142, 251) 1px -1px 1px;
+    text-decoration: none;
+    transition: color 1.5s ease-in 0.5s,
+                font-size 2s ease,
+                letter-spacing 2s ease-out,
+                text-shadow 2s cubic-bezier(0.6, 0, 0.8, 0.5);
+}
+
+li > a:hover {
+    color:rgb(202, 142, 251);
+    font-size: 3em;
+    letter-spacing: 0.1em;
+    text-shadow: white 15px -3px 8px;
+}
+
+ul {
+    list-style: none;
+}
+
+input[type=text], input[type=email]{
+    width: 46%;
+    padding: 12px;
+    margin: 10px 0;
+    box-sizing: border-box;
+    border: 2px solid rebeccapurple;
+    border-radius: 60px;
+}
+
+input[type=submit] {
+    border-radius: 10px;
+    justify-content: right;
+}
+
+input[type=text]:invalid, input[type=email]:invalid, textarea:invalid {
+    box-shadow: rgb(202, 142, 251) 5px 5px 10px;
+}
+
+input[type=text]:focus, input[type=email]:focus, textarea:focus {
+    box-shadow: white 5px 5px 10px;
+}
+
+figcaption {
+    text-align: center;
+    justify-content: center;
+}
+
+form {
+    text-align: left;
+    border: 2px solid rebeccapurple;
+    border-radius: 50px;
+    padding-left: 50px;
+}
+
+textarea {
+    height: 30%;
+    width: 60%;
+    border: 2px solid rebeccapurple;
+    border-radius: 50px;
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+    padding-top: 50px;
+}
+
+footer > p > img {
+    border-radius: 50%;
+}
+
+audio {
+    filter: drop-shadow(8px 8px 15px rgb(202, 142, 251));
+    display: block;
+    margin: 10px auto;
+    width: 80%;
+}
+
+@media only screen and (max-width: 575px) {
+    div#planet {
+        display: none;
+    }
+
+    ul#horizontal_nav li {
+        padding-top: 5px;
+        border: 2px solid white;
+        text-align: center;
+    }
+
+    ul#horizontal_nav {
+        padding: 0px;
+    }
+
+    div#description {
+        padding: 50px;
+    }
+
+    div.comment {
+        padding-left: 10px;
+        margin-left: 20px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    ul#horizontal_nav {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    ul#horizontal_nav li {
+        flex: 1 1 100px;
+        padding-left: 5px;
+    }
+}

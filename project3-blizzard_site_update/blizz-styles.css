@@ -1,0 +1,160 @@
+/* Html styles */
+html {
+    background: radial-gradient(circle at center, black, rgb(0, 0, 96) 95%);
+}
+
+/* Body styles */
+body {
+    color: lightblue;
+    background: black;
+    min-width: 350px;
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    position: relative;
+}
+
+/* Header styles */
+header {
+    color: black;
+    background: linear-gradient(to bottom right, rgb(0, 0, 96), rgb(0, 255, 251) 80%);
+    text-align: center;
+    width: 100%;
+    flex: 1 1 auto;
+}
+
+header > h1 {
+    display: block;
+    float: left;
+    width: 70%;
+    text-align: center;
+}
+
+/* Nav styles */
+nav {
+    flex: 1 1 auto;
+    width: 100%;
+}
+
+/* Footer styles */
+footer {
+    color: black;
+    background: linear-gradient(to top left, rgb(0, 0, 96), rgb(0, 255, 251) 80%);
+    width: 100%;
+}
+
+footer > address > a {
+    color: rgb(32, 32, 162);
+}
+/* Article styles */
+article {
+    flex: 1 0 100px;
+}
+
+/* Img styles */
+img#top-left {
+    display: block;
+    float: left;
+    min-width: 85px;
+    width: 15%;
+}
+
+img#top-right {
+    display: block;
+    float: left;
+    min-width: 85px;
+    width: 15%;
+}
+/* Unordered lists styles */
+ul {
+    list-style: none;
+    border: 4px outset rgb(0, 187, 244);
+}
+
+/* links styles */
+a {
+    color: rgb(0, 187, 244);
+    text-decoration: none;
+    font-family: Verdana, sans-serif;
+}
+
+a:hover {
+    color: rgb(0, 255, 251);
+    text-decoration: underline;
+}
+
+a#facebook {
+    position: fixed;
+    bottom: 0%;
+    right: 0%;
+}
+/* Table styles */
+table#recent_updates {
+    background: rgb(0, 0, 96);
+    border: 6px inset rgb(0, 255, 251);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table#recent_updates th, table#recent_updates td {
+    border: 2px inset rgb(0, 187, 244);
+    vertical-align: middle;
+    text-align: center;
+}
+
+table#recent_updates thead {
+    color: black;
+    background: radial-gradient(circle at center, white, rgb(101, 157, 212) 75%);
+}
+
+table#recent_updates tfoot {
+    color: black;
+    background: radial-gradient(at top, white, rgb(101, 157, 212) 65%);
+}
+
+table#recent_updates tfoot td {
+    text-align: left;
+}
+
+col#dateCol {
+    background: rgb(0, 0, 0);
+    width: 10%;
+}
+
+col.updateCols {
+    width: 30%;
+}
+
+/* Media rules */
+@media only screen and (max-width: 575px) {
+    img#top-right {
+        display: none;
+    }
+
+    ul#horizontal_nav {
+        line-height: 2em;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    ul#horizontal_nav li {
+        border: 2px solid rgb(0, 187, 244);
+        padding-left: 5px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    ul#horizontal_nav {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    ul#horizontal_nav li {
+        flex: 1 1 100px;
+        padding-left: 5px;
+    }
+}

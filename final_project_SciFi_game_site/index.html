@@ -1,0 +1,67 @@
+    <!DOCTYPE html>
+    
+    <html lang="en">
+
+    <head>
+        <title>Starbound Travelers</title>
+        <meta charset="utf-8">
+        <meta name="keywords" content="SciFi game">
+        <meta name="description" content="The home page of the Starbound Travelers video game website">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/st_styles.css" media="screen">
+        <link rel="stylesheet" href="css/st_print.css" media="print">
+
+        <style>
+        #planet {
+            background: url(img/Eve_Biome_map.png);
+            background-size: cover;
+            border-radius: 50%;
+            width: 300px;
+            height: 300px;
+            animation: earth 5s linear 0s infinite;
+            margin: 16% 0% 0% 40%;
+            transform: rotateX(6deg) rotateY(6deg) rotateZ(6deg);
+        }
+
+        @keyframes earth {
+            0% { background-position: 0 0 }
+            100% { background-position: 355px 0 }
+        }
+    </style>
+    </head>
+    
+    <body>
+        <header>
+            <img src="img/Starbound_Travelers_Logo.png" alt="Starbound Travelers Logo">
+        </header>
+        <nav>
+            <ul id="horizontal_nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="store.html">Store</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><button type="submit" onclick="window.open('download.html')">Download</button></li>
+            </ul>
+        </nav>
+        <article>
+            <h1>Starbound Travelers</h1>
+            <p>
+                The planet Nepton serves as the home of the Velenar Academy. Where those who dream of exploring the unknown reaches of space go to be trained in how to survive in the wilds of unknown planets. 
+            </p>
+            <p>
+                Take on the unknown as a cadet of the Velenar Academy. Learn how to survive in the wilds, and reach your dreams of exploring unknown planets.
+            </p>
+            <p>
+                But not all is as it seems. Sabotaged tests, unknown murders, and a threat to the academy itself has you on edge about if your dreams are going to be able to be reached. Or if you are going to be the next victim.
+            </p>
+        </article>
+        <div id="planet"></div>
+        <h2>Listen to the audio of the trailer here!</h2>
+        <audio src="audio/Recording.m4a" controls></audio>
+        
+    <footer>
+        <p>&copy; Starbound Travelers <img src="img/frog_symbol.png" alt="Frog"></p>
+    </footer>
+    </body>
+
+    </html>

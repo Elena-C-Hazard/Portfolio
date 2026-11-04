@@ -1,5 +1,0 @@
-This was a group project that I did with one other person in C#. I made the controls work so that it is
-using ConsoleKey so that it is easier to interact with the game as you don't have to push the button and
-then push enter. I also made the inventory, including making it so that you can get random or customize
-the equipment with what was in the game, I made the hp, the combat system and the systems to check if the
-player died or inputted the wrong key.
